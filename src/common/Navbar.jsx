@@ -4,7 +4,7 @@ import {Link,} from "react-router-dom";
 const Navbar = () => {
     return (<Fragment>
         <nav className="flex px-10 pt-1 pb-1 shadow sticky top-0 bg-gray-100">
-            <Link to="/"><img src="./images/astu_logo.svg" className="w-20" alt=""/></Link>
+            <Link to="/"><img src="../images/astu_logo.svg" className="w-20" alt=""/></Link>
             <div className="flex-col justify-center ml-5 justify-center my-auto">
                 <p className="text-[42px] font-bold my-0 py-0 leading-none">ASTU</p>
                 <p className="text-[16px] font-medium my-0 py-0">S.T.E.M Center</p>

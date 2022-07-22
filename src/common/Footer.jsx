@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 const Footer = () => {
     return (
         <footer className="w-full h-[400px] bg-footer
-                           bg-gray-100 border-t-2 border-white
+                           bg-gray-100
                            flex text-white text-2xl pt-[200px]">
                 <div className="mx-auto">
                     <h1 className="text-white mb-2">Useful Links</h1>

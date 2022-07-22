@@ -1,7 +1,8 @@
 import React from "react";
-import ProjectCard from "./landing/ProjectCard";
-import SampleTrainingLeft from "./landing/SampleTrainingLeft";
-import SampleTrainingRight from "./landing/SampleTrainingRight";
+import ProjectCard from "./components/ProjectCard";
+import SampleTrainingLeft from "./components/SampleTrainingLeft";
+import SampleTrainingRight from "./components/SampleTrainingRight";
+import DownloadApp from "./components/DownloadApp";
 
 const Landing = () => {
     return (
@@ -26,7 +27,9 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className="pb-[300px]"></div>
+            <DownloadApp />
+
+            {/*<div className="pb-[300px]"></div>*/}
         </div>
     );
 }
