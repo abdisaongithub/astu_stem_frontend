@@ -5,7 +5,7 @@ const ProjectCard = () => {
     return (
         <div className="mx-auto">
             <div className="max-w-sm rounded overflow-hidden shadow-xl pb-5 border">
-                <img className="mx-auto px-2 mt-5" src="/images/hero.svg" alt="Project Picture"/>
+                <img className="mx-auto px-2 mt-5" src="/images/hero.svg" alt=""/>
                 <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
                     <p className="text-gray-700 text-base">

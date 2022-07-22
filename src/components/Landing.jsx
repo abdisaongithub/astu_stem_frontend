@@ -26,15 +26,6 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className="mt-10 mx-10">
-                <h1 className="text-[40px] mb-5 ">Ongoing Projects</h1>
-                <div className="flex">
-                    <ProjectCard />
-                    <ProjectCard />
-                    <ProjectCard />
-                </div>
-            </div>
-
             <div className="pb-[300px]"></div>
         </div>
     );
