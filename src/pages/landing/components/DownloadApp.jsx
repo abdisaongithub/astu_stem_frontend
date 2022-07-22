@@ -1,4 +1,5 @@
 import React, {Fragment} from "react";
+import {Link} from "react-router-dom";
 
 const DownloadApp = () => {
     return (<Fragment>
@@ -35,7 +36,7 @@ const DownloadApp = () => {
                 <h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Use Our Mobile Application</h5>
                 <p className="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">Use our mobile application Use our mobile application </p>
                 <div className="justify-center items-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
-                    <a href="#"
+                    <Link to="#"
                        className="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
                         <svg className="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab"
                              data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -47,8 +48,8 @@ const DownloadApp = () => {
                             <div className="mb-1 text-xs">Download on the</div>
                             <div className="-mt-1 font-sans text-sm font-semibold">Mac App Store</div>
                         </div>
-                    </a>
-                    <a href="#"
+                    </Link>
+                    <Link to="#"
                        className="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
                         <svg className="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab"
                              data-icon="google-play" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +61,7 @@ const DownloadApp = () => {
                             <div className="mb-1 text-xs">Get in on</div>
                             <div className="-mt-1 font-sans text-sm font-semibold">Google Play</div>
                         </div>
-                    </a>
+                    </Link>
                 </div>
             </div>
 

@@ -1,8 +1,8 @@
 import React from "react";
 import ProjectCard from "./components/ProjectCard";
-import SampleTrainingLeft from "./components/SampleTrainingLeft";
-import SampleTrainingRight from "./components/SampleTrainingRight";
 import DownloadApp from "./components/DownloadApp";
+import TrainingLeft from "../../common/TrainingLeft";
+import TrainingRight from "../../common/TrainingRight";
 
 const Landing = () => {
     return (
@@ -14,9 +14,9 @@ const Landing = () => {
                 </div>
             </div>
 
-            <SampleTrainingLeft />
-            <SampleTrainingRight />
-            <SampleTrainingLeft />
+            <TrainingLeft />
+            <TrainingRight />
+            <TrainingLeft />
 
             <div className="mt-10 mx-10">
                 <h1 className="text-[40px] mb-5 ">Ongoing Projects</h1>

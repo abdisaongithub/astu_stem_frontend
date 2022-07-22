@@ -5,6 +5,8 @@ import Footer from "./common/Footer";
 import Blog from "./pages/blog/blog";
 import BlogDetail from "./pages/blog/blog_detail";
 import Landing from "./pages/landing/landing";
+import Trainings from "./pages/trainings/trainings";
+import About from "./pages/about/about";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
                   <Route exact path="/blog" element={<Blog />}>
                   </Route>
                   <Route exact path="/blog/:blogId" element={<BlogDetail />}/>
+                  <Route exact path="/about" element={<About />}/>
+                  <Route exact path="/trainings" element={<Trainings />}/>
               </Routes>
               <Footer />
           </div>
