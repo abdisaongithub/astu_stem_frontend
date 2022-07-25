@@ -3,7 +3,7 @@ import React from "react";
 const BlogDetail = () => {
     return (
         <div className="bg-gray-100">
-            <div className="w-full h-[200px] bg-blog_header2 flex text-white">
+            <div className="w-full h-[200px] bg-blog_header object-cover bg-no-repeat flex text-white">
                 <div className="mx-auto my-auto text-8xl">
                     <h1 className="text-white mb-2">Some Blog Title</h1>
                 </div>
@@ -26,8 +26,11 @@ const BlogDetail = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className="flex-col w-2/3 ml-10">
                     <p className="text-semibold text-justify">
+                        <img src="/images/astu_logo.svg" className="w-full h-[200px] object-cover rounded" alt=""/>
+                        <p className="font-bold text-3xl my-3 underline">Some Blog Title</p>
                         Winds, spirits, and ultimate lotus will always protect them. Winds, spirits, and ultimate lotus will always protect them. Winds, spirits, and ultimate lotus will always protect them.
                         Winds, spirits, and ultimate lotus will always protect them. Winds, spirits, and ultimate lotus will always protect them. Winds, spirits, and ultimate lotus will always protect them.
                         Winds, spirits, and ultimate lotus will always protect them. Winds, spirits, and ultimate lotus will always protect them. Winds, spirits, and ultimate lotus will always protect them.

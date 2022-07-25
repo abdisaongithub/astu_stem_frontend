@@ -21,7 +21,7 @@ const TrainingRight = () => {
                 </div>
             </div>
             <div className="w-1/2 mx-3">
-                <img src="/images/plane.svg" alt=""/>
+                <img src="/images/plane.svg" className="floating" alt=""/>
             </div>
         </div>
     )

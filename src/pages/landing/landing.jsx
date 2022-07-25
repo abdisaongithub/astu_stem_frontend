@@ -3,6 +3,7 @@ import ProjectCard from "./components/ProjectCard";
 import DownloadApp from "./components/DownloadApp";
 import TrainingLeft from "../../common/TrainingLeft";
 import TrainingRight from "../../common/TrainingRight";
+import NewsSection from "./components/NewsSection";
 
 const Landing = () => {
     return (
@@ -26,10 +27,10 @@ const Landing = () => {
                     <ProjectCard />
                 </div>
             </div>
-
+            <NewsSection />
             <DownloadApp />
 
-            {/*<div className="pb-[300px]"></div>*/}
+            <div className="pb-10"></div>
         </div>
     );
 }

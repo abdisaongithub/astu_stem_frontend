@@ -1,0 +1,32 @@
+import React, {Fragment} from "react";
+
+const NewsCardButton = () => {
+    return (<Fragment>
+
+        <div
+           className="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mx-auto">
+            <img className="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                 src="/images/hero.svg" alt=""/>
+            <div className="flex flex-col justify-between p-4 leading-normal">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                    technology acquisitions 2021</h5>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest
+                    enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+
+                <div className="flex">
+                    <p className="text-gray-400 my-auto">Sep 11 2001</p>
+                    <a href="/news/1" className="flex ml-auto">
+                        <button
+                            className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 rounded-full py-2 my-auto ">
+                            Read More
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </Fragment>)
+}
+
+export default NewsCardButton
