@@ -1,13 +1,12 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
-// TODO: smooth out footer svg
 
 const Footer = () => {
     return (
         <footer className="w-full h-[300px] bg-footer
                            bg-gray-100
-                           flex text-white text-2xl pt-[120px]">
+                           flex text-white text-2xl pt-[100px]">
                 <div className="mx-auto">
                     <h1 className="text-white mb-2">Useful Links</h1>
                     <Link to="/trainings" className="text-sm block">&bull; Trainings</Link>
@@ -43,9 +42,9 @@ const Footer = () => {
                     <Link to="/" className="text-sm block">&bull; Blog</Link>
                     <Link to="/" className="text-sm block">&bull; News</Link>
                     <div className="flex-row">
-                        <i className="fab fa-facebook"/>
-                        <i className="fab fa-telegram"/>
-                        <i className="fab fa-youtube"/>
+                        <i className="fab fa-facebook mx-2"/>
+                        <i className="fab fa-telegram mx-2"/>
+                        <i className="fab fa-youtube mx-2"/>
                     {/* TODO:   Make those links circular and clickable*/}
                     </div>
                 </div>

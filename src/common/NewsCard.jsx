@@ -1,6 +1,6 @@
 import React, {Fragment} from "react";
 
-const NewsCard = () => {
+const NewsCard = ({news}) => {
     return (<Fragment>
 
         <a href="/news"

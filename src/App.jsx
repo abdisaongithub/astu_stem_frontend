@@ -8,11 +8,12 @@ import Landing from "./pages/landing/landing";
 import Trainings from "./pages/trainings/trainings";
 import About from "./pages/about/about";
 import News from "./pages/news/news";
+import Projects from "./pages/projects/projects";
 
 function App() {
   return (
       <Router>
-          <div className="bg-gray-200">
+          <div className="bg-gray-100">
               <NavBar />
               <Routes>
                   <Route exact path="/" element={<Landing />}/>
@@ -21,6 +22,7 @@ function App() {
                   <Route exact path="/about" element={<About />}/>
                   <Route exact path="/trainings" element={<Trainings />}/>
                   <Route exact path="/news" element={<News />}/>
+                  <Route exact path="/projects" element={<Projects />}/>
               </Routes>
               <Footer />
           </div>

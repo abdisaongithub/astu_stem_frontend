@@ -15,7 +15,7 @@ const NavBar = () => {
             <ul className="flex my-auto ml-auto mr-5 text-[18px]">
                 <Link to="/trainings" className="mx-2 hover:text-red-600"><li>Trainings</li></Link>
                 <Link to="/about" className="mx-2 hover:text-red-600"><li>About</li></Link>
-                <Link to="/awards" className="mx-2 hover:text-red-600"><li>Projects</li></Link>
+                <Link to="/projects" className="mx-2 hover:text-red-600"><li>Projects</li></Link>
                 <Link to="/blog" className="mx-2 hover:text-red-600"><li>Blog</li></Link>
                 <Link to="/news" className="mx-2 hover:text-red-600"><li>News</li></Link>
             </ul>
