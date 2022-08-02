@@ -1,17 +1,18 @@
 import {Link} from "react-router-dom";
 import React from "react";
 
-const ProjectCard = () => {
+import baseUrl from "../../../constants";
+
+//TODO: project detail page
+
+const ProjectCard = ({project, key}) => {
     return (
-        <div className="mx-auto bg-gray-100">
+        <div className="mx-auto bg-gray-100" key={key}>
             <div className="max-w-sm rounded overflow-hidden shadow-xl pb-5 border ">
-                <img className="mx-auto px-2 mt-5" src="/images/hero.svg" alt=""/>
-                <div className="px-6 py-4">
+                <img className="mx-auto" src={baseUrl + project.image} alt=""/>
+                <div className="px-6 pt-4">
                     <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-                    <p className="text-gray-700 text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!
-                        Maiores et perferendis eaque, exercitationem praesentium nihil.
-                    </p>
+                    <p className="text-gray-700 text-base">{project.title}</p>
                 </div>
                 <Link to="/projects">
                     <div className="flex">

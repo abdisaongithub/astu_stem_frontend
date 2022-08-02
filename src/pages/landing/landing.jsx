@@ -41,10 +41,10 @@ const Landing = () => {
                         if (num < 3) {
                             if (num % 2 === 0) {
                                 num += 1
-                                return <TrainingLeft training={training}/>
+                                return <TrainingLeft training={training} all={false}/>
                             } else {
                                 num += 1
-                                return <TrainingRight training={training}/>
+                                return <TrainingRight training={training} all={false}/>
                             }
                         }
                     }

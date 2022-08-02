@@ -42,10 +42,9 @@ const Footer = () => {
                     <Link to="/" className="text-sm block">&bull; Blog</Link>
                     <Link to="/" className="text-sm block">&bull; News</Link>
                     <div className="flex-row">
-                        <i className="fab fa-facebook mx-2"/>
-                        <i className="fab fa-telegram mx-2"/>
-                        <i className="fab fa-youtube mx-2"/>
-                    {/* TODO:   Make those links circular and clickable*/}
+                        <Link to="/" target="_blank"><i className="fab fa-facebook mx-2"/></Link>
+                        <Link to="/" target="_blank"><i className="fab fa-telegram mx-2"/></Link>
+                        <Link to="/" target="_blank"><i className="fab fa-youtube mx-2"/></Link>
                     </div>
                 </div>
 

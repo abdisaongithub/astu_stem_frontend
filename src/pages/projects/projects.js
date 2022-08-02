@@ -1,23 +1,34 @@
-
-import React from "react";
+import React, {useEffect, useState} from "react";
 import ProjectsCard from "./components/ProjectsCard";
 
+import api from "../../api";
+
 const Projects = () => {
-    return (
-        <div className="mt-10 mx-10 mb-10">
-            {/*<h1 className="text-[40px] mb-5 ">Ongoing Projects</h1>*/}
-            <div className="flex">
-                <ProjectsCard />
-                <ProjectsCard />
-                <ProjectsCard />
-            </div>
-            <div className="flex mt-10">
-                <ProjectsCard />
-                <ProjectsCard />
-                <ProjectsCard />
-            </div>
-        </div>
-    )
+
+    const [projects, setProjects] = useState([])
+    const [loading, setLoading] = useState(true)
+
+    let counter = 0
+
+    useEffect(() => {
+        api.get('projects').then((res) => {
+            setProjects(res.data)
+            setLoading(false)
+            console.log(projects)
+        }).catch((e)=>{
+            console.log(e)
+        })
+    }, [])
+
+    return <div className="grid grid-cols-3 my-10">
+        {loading ?
+            'loading' :
+            projects.data.map((project) => {
+                counter+=3
+                return <ProjectsCard project={project} key={project.id}/>
+            })
+        }
+    </div>
 }
 // TODO: make a detail page for
 export default Projects
